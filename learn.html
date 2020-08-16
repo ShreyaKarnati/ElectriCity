@@ -12,20 +12,20 @@
 
     <nav class="nav">
       <a href="index.html" class="logoContainer"><img src="logo.gif" class="logo"></a>
-      <button class="navButton"><a href="index.html">HOME</a></button>
+      <button class="navButton"><a href="index.html" class="navLinks">HOME</a></button>
       <div class="dropdown">
-        <button class="dropbtn">LEARN</button>
+        <button class="dropbtn"><a href="learn.html" class="navLinks">LEARN</a></button>
         <div class="dropdown-content" id="myDropdown">
-          <a href="hydro.html">HYDRO</a>
-          <a href="solar.html">SOLAR</a>
-          <a href="wind.html">WIND</a>
-          <a href="nuclear.html">NUCLEAR</a>
-          <a href="fossil.html">FOSSIL</a>
-          <a href="policy.html">POLICIES</a>
+          <a href="hydro.html" class="navLinks">HYDRO</a>
+          <a href="solar.html" class="navLinks">SOLAR</a>
+          <a href="wind.html" class="navLinks">WIND</a>
+          <a href="nuclear.html" class="navLinks">NUCLEAR</a>
+          <a href="fossil.html" class="navLinks">FOSSIL</a>
+          <a href="policy.html" class="navLinks">POLICIES</a>
         </div>
       </div>  
-      <button class="navButton"><a href = "change.html">CHANGE</a></button>
-      <button class="navButton creatorButton"><a href="about.html">CREATORS</a></button>
+      <button class="navButton"><a href = "change.html" class="navLinks">CHANGE</a></button>
+      <button class="navButton creatorButton"><a href="about.html" class="navLinks">CREATORS</a></button>
     </nav><br>
 
     <h1 id="header">Learn About Energy</h1>
@@ -36,9 +36,9 @@
     <div class="info">
       <li>Geothermal</li>
       <li>Biomass</li>
-      <li>Wind power</li>
-      <li>Solar</li>
-      <li>Hydro power</li>
+      <li><a href="wind.html" class="learnLink">Wind power</a></li>
+      <li><a href="solar.html" class="learnLink">Solar</a></li>
+      <li><a href="hydro.html" class="learnLink">Hydro power</a></li>
       <li>Bio energy</li>
       <li>Tidal energy</li>
       <li>Hydrolysis</li>
@@ -46,31 +46,55 @@
     </div><br>
     <h3 class="subsubheading">Nonrenewable Energy Sources:</h3>
     <div class="info">
-      <li>Coal</li>
-      <li>Petroluem</li>
-      <li>Natural gas</li>
-      <li>Oil</li>
-      <li>Nuclear</li>
+      <li><a href="fossil.html" class="learnLink">Coal</a></li>
+      <li><a href="fossil.html" class="learnLink">Petroluem</a></li>
+      <li><a href="fossil.html" class="learnLink">Natural gas</a></li>
+      <li><a href="fossil.html" class="learnLink">Oil</a></li>
+      <li><a href="nuclear.html" class="learnLink">Nuclear</a></li>
     </div><br>
 
     <h3 class="subsubheading">Energy Introduction</h3>
     <div class="info">
-      <p>In the past, the majority of the world’s energy has come from non-renewable resources such as coal, natural gas, and oil. As these resources have started dwindling and people have become more aware of their carbon footprint, communities are shifting towards greener sources of energy. Some examples are solar power, hydro power, and wind power. While these energy sources are cleaner, they all come with their own sets of drawbacks as well. When coming up with an energy plan for an area it is important to consider not only the impact on the environment but also the cost, and compatibility of an energy system with the surrounding geography.</p>
-      <p>
+      <p class="energyText">In the past, the majority of the world’s energy has come from non-renewable resources such as coal, natural gas, and oil. As these resources have started dwindling and people have become more aware of their carbon footprint, communities are shifting towards greener sources of energy. Some examples are solar power, hydro power, and wind power. While these energy sources are cleaner, they all come with their own sets of drawbacks as well. When coming up with an energy plan for an area it is important to consider not only the impact on the environment but also the cost, and compatibility of an energy system with the surrounding geography.</p>
     </div><br>
 
     <h3 class="subsubheading">For Additional Information Visit These Websites!</h3>
     <div>
       <ul>
-        <a href = "https://kiwienergy.us/the-pros-and-cons-of-fossil-fuels/" target= "_blank" class="additional"><li>Kiwi Energy</li></a>
-        <a href = "https://itstillruns.com/much-cost-replace-fuel-pump-6857057.html#:~:text=Certified%20Auto%20Mechanic,and%20year%20of%20the%20vehicle." target= "_blank" class="additional"><li>It Still Runs</li></a>
-        <a href = "https://www.nrdc.org/stories/renewable-energy-clean-facts" target= "_blank" class="additional"><li>NRDC</li></a><br>
+        <a href = "https://kiwienergy.us/the-pros-and-cons-of-fossil-fuels/" target= "_blank" class="additional learnLink"><li>Kiwi Energy</li></a>
+        <a href = "https://itstillruns.com/much-cost-replace-fuel-pump-6857057.html#:~:text=Certified%20Auto%20Mechanic,and%20year%20of%20the%20vehicle." target= "_blank" class="additional learnLink"><li>It Still Runs</li></a>
+        <a href = "https://www.nrdc.org/stories/renewable-energy-clean-facts" target= "_blank" class="additional learnLink"><li>NRDC</li></a><br>
       </ul>
     </div>
-    <style>
-html, body, h1, h2, h3, h4, p {
-  font-family: 'Monda', sans-serif;
-}
-</style>
-</body>
+
+    <footer>
+      
+        <img src="transparentLogo.png" class="footerLogo"><br>
+	      <h4><center>Have Questions or Comments? <br>Contact us: electricity.simulation@gmail.com</h4>
+
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search..." title="Type in a name">
+
+        <ul id="myUL">
+          <li><a href="about.html">About</a></li>
+          <li><a href="fossil.html">Coal</a></li>
+          <li><a href="change.html">Change</a></li>
+          <li><a href="about.html">Creators</a></li>
+          <li><a href="change.html">Donate</a></li>
+          <li><a href="learn.html">Energy</a></li>
+          <li><a href="fossil.html">Fossil</a></li> 
+          <li><a href="landing.html">Game</a></li>
+          <li><a href="change.html">Help</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="hydro.html">Hydro</a></li>
+          <li><a href="learn.html">Learn</a></li>
+          <li><a href="nuclear.html">Nuclear</a></li>
+          <li><a href="landing.html">Play</a></li>         
+          <li><a href="policies.html">Policies</a></li>
+          <li><a href="landing.html">Simulation</a></li>
+          <li><a href="solar.html">Solar</a></li>
+        </ul>
+
+    </footer>
+
+  </body>
 </html>

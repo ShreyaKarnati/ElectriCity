@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Philosopher:ital,wght@1,700&family=Suez+One&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -29,6 +29,7 @@ body {
   text-align: center;
   color: #4b0c3b;
   font-size: 35px;
+  font-family: 'Suez One', serif;
 }
 
 .dashboardSubheading {
@@ -36,6 +37,7 @@ body {
   color: #853a76;
   font-size: 30px;
   margin-bottom: 5px;
+  font-family: 'Philosopher', sans-serif;
 }
 
 .dashboardSubsubheading {
@@ -43,11 +45,13 @@ body {
   color: #853a76;
   font-size: 25px;
   margin-bottom: 5px;
+  font-family: 'Philosopher', sans-serif;
 }
 
 .buttons {
   text-align: center;
   margin-bottom: 10px;
+  font-family: 'Bebas Neue', cursive;
 } 
 
 .budgetButton {
@@ -57,6 +61,7 @@ body {
   border: 2px solid #55761a;
   border-radius: 8px;
   color: white;
+  font-family: 'Bebas Neue', cursive;
 }
 
 #submitButton {
@@ -65,6 +70,7 @@ body {
   font-size: 25px;
   margin-top: 10px;
   margin-bottom: 0px;
+  font-family: 'Bebas Neue', cursive;
 }
 
 .columns {

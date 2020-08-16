@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Philosopher:ital,wght@1,700&family=Suez+One&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -47,6 +47,7 @@ body {
   margin-top: 25px;
   margin-bottom: 25px;
   padding: 10px;
+  font-family: 'Bebas Neue', cursive;
 }
 
 a {
