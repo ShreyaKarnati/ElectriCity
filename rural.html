@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="rural.css" rel="stylesheet" type="text/css"/>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	  <script src="rural.js" defer></script>
+  </head>
+  <body>
+
+    <div class="dashboard">
+
+      <h1 class="dashboardHeader">Controls</h1>
+      
+      <div class="columns">
+
+        <div class="left">
+
+          <h3 class="dashboardSubheading">Clean<h3>
+
+          <h3 class="dashboardSubsubheading">Hydro<h3>
+          <div class="buttons">
+            <button class="budgetButton hydroAdd">Add</button>
+            <button class="budgetButton hydroRemove">Remove</button>
+          </div>
+
+          <h3 class="dashboardSubsubheading">Solar<h3>
+          <div class="buttons">
+            <button class="budgetButton solarAdd">Add</button>
+            <button class="budgetButton solarRemove">Remove</button>
+          </div>
+
+          <h3 class="dashboardSubsubheading">Wind<h3>
+          <div class="buttons">
+            <button class="budgetButton windAdd">Add</button>
+            <button class="budgetButton windRemove">Remove</button>
+          </div>
+          
+        </div>
+
+        <div class="right">
+
+          <h3 class="dashboardSubheading">Unclean<h3>
+
+          <h3 class="dashboardSubsubheading">Nuclear<h3>
+          <div class="buttons">
+            <button class="budgetButton nuclearAdd">Add</button>
+            <button class="budgetButton nuclearRemove">Remove</button>
+          </div>
+
+          <h3 class="dashboardSubsubheading">Coal<h3>
+          <div class="buttons">
+            <button class="budgetButton coalAdd">Add</button>
+            <button class="budgetButton coalRemove">Remove</button>
+          </div>
+
+        </div>
+
+      </div>
+
+      <h3 class="dashboardSubheading">Total Budget: </h3>
+      <div class="changing" id="totalBudget"><h5>$XXX,XXX</h5></div>
+
+      <h3 class="dashboardSubheading">Remaining Budget: </h3>
+      <div class="changing" id="budgetContainer"><h5>$XXX,XXX</h5></div>
+
+      <h3 class="dashboardSubheading">Energy Needed: </h3>
+      <div class="changing" id="totalEnergy"><h5>XXX MWH</h5></div>
+
+      <h3 class="dashboardSubheading">Energy Produced: </h3>
+      <div class="changing" id="energyContainer"><h5>XXX MWH</h5></div>
+
+      <h3 class="dashboardSubheading">Emissions Cap: </h3>
+      <div class="changing" id="totalEmissions"><h5>XXX Carbon</h5></div>
+
+      <h3 class="dashboardSubheading">Emissions: </h3>
+      <div class="changing" id="emissionsContainer"><h5>XXX Carbon</h5></div>
+
+      <div class="buttons">
+        <button class="budgetButton"><a href="ruralPrize.html" id="submitButton">Submit</a></button>
+      </div>
+
+    </div>
+
+    <img src="hydroplant.png" class="hide" id="hydro1">
+
+    <div class="wind">
+      <img src="windmill.gif" class="hide" id="wind1">
+      <img src="windmill.gif" class="hide" id="wind2">
+    </div>
+    
+    <div class="coal">
+      <img src="coal.png" class="hide" id="coal1">
+      <img src="coal.png" class="hide" id="coal2">
+    </div>
+
+    <div class="solar">
+      <img src="solar.png" class="hide" id="solar1">
+      <img src="solar.png" class="hide" id="solar2">
+    </div>
+
+    <img src="nuclear.png" class="nuclear1 hide" id="nuclear1">
+
+  </body>
+</html>

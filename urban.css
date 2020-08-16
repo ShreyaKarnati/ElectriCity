@@ -1,0 +1,150 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('city.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 70% 100%;
+}
+
+.dashboard {
+  width: 26.5%;
+  height: 93.5%;
+  background-color: #dfe49b;
+  right: 0%;
+  border: 15px solid #55761a;
+  border-radius: 5px;
+  position: fixed;
+  margin: 2%;
+  padding: 10px;
+  overflow: auto;
+}
+
+.dashboardHeader {
+  text-align: center;
+  color: #4b0c3b;
+  font-size: 35px;
+}
+
+.dashboardSubheading {
+  text-align: center;
+  color: #853a76;
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.dashboardSubsubheading {
+  text-align: center;
+  color: #853a76;
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+.buttons {
+  text-align: center;
+  margin-bottom: 10px;
+} 
+
+.budgetButton {
+  font-size: 15px;
+  padding: 5px;
+  background-color: #55761a;
+  border: 2px solid #55761a;
+  border-radius: 8px;
+  color: white;
+}
+
+#submitButton {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+#hydro1 {
+  left: 36%;
+  top: 2%;
+  position: fixed;
+  width: 4%;
+  height: auto;
+}
+
+#hydro2 {
+  left: 55%;
+  top: 2%;
+  position: fixed;
+  width: 4%;
+  height: auto;
+}
+
+.wind {
+  left: 27%;
+  top: 15%;
+  position: fixed;
+}
+
+#wind1, #wind2, #wind3, #wind4, #wind5 {
+  width: 3.5%;
+  height: auto;
+}
+
+.coal {
+  left: 27%;
+  top: 28%;
+  position: fixed;
+}
+
+#coal1, #coal2, #coal3, #coal4, #coal5 {
+  width: 4%;
+  height: auto;
+}
+
+.solar {
+  left: 27%;
+  top: 23.5%;
+  position: fixed;
+}
+
+#solar1, #solar2, #solar3, #solar4, #solar5 {
+  width: 3.6%;
+  height: 3%;
+}
+
+.nuclear1 {
+  left: 40%;
+  top: 15%;
+  width: 5%;
+  height: auto;
+  position: fixed;
+}
+
+.nuclear2 {
+  left: 42%;
+  top: 24%;
+  width: 5%;
+  height: auto;
+  position: fixed;
+}
+
+.hide {
+  display: none; 
+}
+
+.changing {
+  text-align: center;
+  color: black;
+  font-size: 20px;
+  margin-bottom: 5px;
+}

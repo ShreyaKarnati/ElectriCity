@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	  <script src="script.js" defer></script>
+  </head>
+  <body>
+
+    <nav class="nav">
+      <a href="index.html" class="logoContainer"><img src="logo.gif" class="logo"></a>
+      <button class="navButton"><a href="index.html">HOME</a></button>
+      <div class="dropdown">
+        <button class="dropbtn"><a href="learn.html">LEARN</a></button>
+        <div class="dropdown-content" id="myDropdown">
+          <a href="hydro.html">HYDRO</a>
+          <a href="solar.html">SOLAR</a>
+          <a href="wind.html">WIND</a>
+          <a href="nuclear.html">NUCLEAR</a>
+          <a href="fossil.html">FOSSIL</a>
+          <a href="policy.html">POLICIES</a>
+        </div>
+      </div>  
+      <button class="navButton"><a href = "change.html">CHANGE</a></button>
+      <button class="navButton creatorButton"><a href="about.html">CREATORS</a></button>
+    </nav><br>
+
+    <h1 id="header">Our Team</h1>
+
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="shreya.png" alt="Shreya" class="person">
+          <div class="container">
+            <h2>Shreya Karnati</h2>
+            <p class="title">CEO & Founder</p>
+            <p>Shreya is a rising senior at Interlake High School, where she is an AP scholar, has completed the accelerated IB Diploma program, and earned her IB Diploma. Her favorite subjects include computer science and business management. She loves to code and has participated in numerous hackathons hoping to make a positive change in the world. In her free time, she likes to read, bake, and listen to music.</p>
+            <p class="bio">Linkedin: <a href="https://www.linkedin.com/in/shreya-karnati/" target="_blank">Contact Me</a></p>
+            <p class="bio"><a href="mailto:shreya1.karnati@gmail.com" target="_blank" rel="noopener noreferrer">Email Me</a></p><br>
+          </div>
+        </div>
+      </div>
+
+    <div class="column">
+      <div class="card">
+      <img src="smriti.png" alt="Smriti" class="person">
+        <div class="container">
+          <h2>Smriti Sankaran</h2>
+          <p class="title">CEO & Founder</p>
+          <p>Smriti is a rising senior at Interlake High School, where she has completed several AP courses and the accelerated IB program, earning an IB Diploma. She loves to code and is really passionate about using her coding abilities to make a difference. During her free time she enjoys playing board games with her family, baking, and learning new songs on her guitar.</p>
+          <p class="bio">Linkedin: <a href="https://www.linkedin.com/in/smriti-sankaran-57b5a419a/" target="_blank">Contact Me</a></p>
+          <p class="bio"><a href="mailto:smriti.sankaran@gmail.com" target="_blank" rel="noopener noreferrer">Email Me</a></p><br>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <img src="shruthika.png" alt="Shruthika" class="person">
+        <div class="container">
+          <h2>Shruthika Kandukuri</h2>
+          <p class="title">CEO & Founder</p>
+          <p>Shruthika is a rising freshman at the University of Washington in the College of Engineering, and she plans on majoring in Mechanical Engineering. Her favorite subjects include math and science. She enjoys coding and using technology to make a positive change, and this is her second hackathon. In her free time, she enjoys reading, baking, and painting.</p>
+          <p class="bio">Linkedin: <a href="https://www.linkedin.com/in/shruthika-kandukuri/" target="_blank">Contact Me</a></p>
+          <p class="bio"><a href="mailto:kshruthika9@gmail.com" target="_blank" rel="noopener noreferrer">Email Me</a></p><br>
+        </div>
+      </div>
+    </div>
+  </div>
+  <style>
+    html, body, h1, h2, h3, h4 {
+    font-family: 'Monda', sans-serif;
+}
+  <!-- 
+  <form action="action_page.php">
+  <div class="container">
+    <h2>Sign Up To Recieve Updates and More Information</h2>
+  </div>
+
+  <div class="container" style="background-color:white">
+    <label for="username">UserName</label>
+    <input type="text" placeholder="Name" name="username" required>
+    <label for="email">Email</label>
+    <input type="text" placeholder="Email address" name="email" required>
+  </div>
+
+  <div class="container">
+    <input type="submit" value="Subscribe">
+  </div>
+</form>
+function othername() {
+    var input = document.getElementById("username").value;
+    alert(input);
+}
+
+form {
+  border: 4px solid #f1f1f1;
+}
+.container {
+  padding: 15px;
+  background-color: #f1f1f1;
+}
+input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+var config = {
+  apiKey: "AIzaSyDGHazqvjI8tv9t6ccfhKERoxMZbF_PJic",
+  authDomain: "techacks-202ed.firebaseapp.com",
+  databaseURL: "https://techacks-202ed.firebaseio.com"
+  storageBucket: "techacks-202ed.appspot.com",
+};
+
+// Initialize your Firebase app
+firebase.initializeApp(config);
+
+// Reference to the recommendations object in your Firebase database
+var username = firebase.database().ref("username");
+
+// Save a new recommendation to the database, using the input in the form
+var submitUser = function () {
+
+  // Get input values from each of the form elements
+  var user = $("#UserName").val();
+  var email = $("#Email").val();
+  
+
+  // Push a new recommendation to the database using those values
+  recommendations.push({
+    "UserName": username,
+    "Email": email,
+  });
+};
+
+// When the window is fully loaded, call this function.
+// Note: because we are attaching an event listener to a particular HTML element
+// in this function, we can't do that until the HTML element in question has
+// been loaded. Otherwise, we're attaching our listener to nothing, and no code
+// will run when the submit button is clicked.
+$(window).load(function () {
+
+  // Find the HTML element with the id recommendationForm, and when the submit
+  // event is triggered on that element, call submitRecommendation.
+  $("#recommendationForm").submit(submitRecommendation);
+-->
+</body>
+</html>

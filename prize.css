@@ -1,0 +1,55 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('stage.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.grey {
+  filter: grayscale(100%);
+}
+
+#energy{
+  height: 500px;
+  width: auto;
+}
+
+#budget{
+  height: 700px;
+  width: auto;
+}
+
+#emissions{
+  height: 500px;
+  width: auto;
+}
+
+#ribbons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+
+.next {
+  font-size: 20px;
+  background-color: #f6f7cd;
+  margin-left: 10px;
+  border: 2px solid #f6f7cd;
+  border-radius: 5px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #ac7183;
+}
